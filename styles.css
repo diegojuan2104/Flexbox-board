@@ -1,0 +1,38 @@
+.flexbox-container{
+    display: flex;
+    /**keep the size align-items: flex-start;*/
+    /* center items in vertically or horizontally align-items: center;*/
+    /* change direction of the containerflex-direction: column;*/
+
+}
+
+.flexbox-item{
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1{
+    min-height: 100px;
+   /* No shrink flex-shrink: 0;*/
+   order: 3;
+}
+
+.flexbox-item-2{
+    min-height: 200px;
+    /* create a base to the flex grown flex-basis: 0;*/
+    /* allows take more size than the other items flex-grow: 2;*/
+    order: 1;
+    align-self: center;
+}
+
+.flexbox-item-3{
+    min-height: 300px;
+    order: 2;
+}
+
+.flexbox-item-4{
+    min-height: 300px;
+    order: 2;
+}
